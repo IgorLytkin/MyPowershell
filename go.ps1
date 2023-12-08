@@ -30,8 +30,14 @@ Write-Host 'Секретный ssh-ключ (для pagent):', $SecretKeyPpk
 Write-Host 'Создаём ssh-туннели для портов ',$Ports
 foreach ($i in $Ports) {
     $s_Port = $i+":localhost:"+$i
-    Write-Host "Проброс порта localost :",$i,"->",$ServerFqdn,":",$i
+    $s = "Проброс порта localost :",$i,"->",$ServerFqdn,":",$i
+    Write-Host
+    Write-Host $s
+    Write-Host
     ssh -L $s_Port -v -i $SecretKey -N -f -l $UbuntuUserName  $ServerFqdn
+
+    # TODO: анализ кода возврата ssh
+
 }
 
 # Загружаем секретный ключ с passphrase в Pageant
