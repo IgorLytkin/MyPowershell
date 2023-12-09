@@ -12,8 +12,10 @@ $LocalComputerName = $env:ComputerName
 # Проверяем наличие ssh-клиента на машине с ОС Windows
 Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Client*'
 
-# Убиваем все процессы ssh.exe
+# Убиваем все процессы ssh.exe, pagent.exe, putty.exe
 Stop-Process -Name ssh -Force -ErrorAction SilentlyContinue
+Stop-Process -Name pagent -Force -ErrorAction SilentlyContinue
+Stop-Process -Name putty -Force -ErrorAction SilentlyContinue
 
 # Устанавливаем ssh-туннели
 if ($LocalComputerName -eq "IGOR2022") { # Ноутбук HP
