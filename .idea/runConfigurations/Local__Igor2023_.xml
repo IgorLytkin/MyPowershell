@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Local (Igor2023)" type="PowerShellRunType" factoryName="PowerShell" scriptUrl="C:\Users\igorl\IdeaProjects\MyPowershell\go.ps1" workingDirectory="C:\Users\igorl" executablePath="$PROJECT_DIR$/../../../../WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe">
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>

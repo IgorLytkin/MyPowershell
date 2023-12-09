@@ -14,7 +14,6 @@ Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*'
 Stop-Process -Name ssh -Force -ErrorAction SilentlyContinue
 
 # Устанавливаем ssh-туннели
-$ComputerName = $env:computername
 if ($ComputerName = "IGOR2022") { # Ноутбук HP
     $KeysFolder = "D:\Yandex\igor.lytkin.2020\YandexDisk\Singularity\Keys\2023\ed25519\"
 } elseif ($ComputerName = "IGOR2023") { # Beelink EQ12
