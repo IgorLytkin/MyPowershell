@@ -6,22 +6,23 @@
 $ServerFqdn = 'singularity.lytkins.ru'
 $UbuntuUserName = 'liv'
 $Ports = '22','5432','5433','6379','7687'
+$LocalComputerName = $env:ComputerName
 
 # Проверяем наличие ssh-клиента на машине с ОС Windows
-Get-WindowsCapability -Online | ? Name -like 'OpenSSH.Client*'
+Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Client*'
 
 # Убиваем все процессы ssh.exe
 Stop-Process -Name ssh -Force -ErrorAction SilentlyContinue
 
 # Устанавливаем ssh-туннели
-if ($ComputerName = "IGOR2022") { # Ноутбук HP
+if ($LocalComputerName -eq "IGOR2022") { # Ноутбук HP
     $KeysFolder = "D:\Yandex\igor.lytkin.2020\YandexDisk\Singularity\Keys\2023\ed25519\"
-} elseif ($ComputerName = "IGOR2023") { # Beelink EQ12
+} elseif ($LocalComputerName -eq "IGOR2023") { # Beelink EQ12
     $KeysFolder = 'C:\Users\igorl\YandexDisk\Singularity\Keys\2023\ed25519\'
 }
 $SecretKey     = $KeysFolder + 'id_ed25519'
 $SecretKeyPpk  = $SecretKey + '.ppk'
-Write-Host 'Имя компьютера:', $ComputerName
+Write-Host 'Имя компьютера:', $LocalComputerName
 Write-Host 'Секретный ssh-ключ:', $SecretKey
 Write-Host 'Секретный ssh-ключ (для pagent):', $SecretKeyPpk
 
