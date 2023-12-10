@@ -30,7 +30,7 @@ Write-Host 'Секретный ssh-ключ:', $SecretKey
 Write-Host 'Секретный ssh-ключ (для pagent):', $SecretKeyPpk
 
 # Добавляем секретный ключ в ssh-agent
-ssh-add -v $SecretKey
+Start-Process -FilePath "C:\WINDOWS\System32\OpenSSH\ssh-add.exe" -ArgumentList "-v $SecretKey"
 # TODO Анализ кода возврата
 
 # Цикл по номерам портов, создаем ssh-туннель на порт
@@ -40,12 +40,11 @@ foreach ($i in $Ports) {
     $s_Port = $i+":localhost:"+$i
     Write-Host $s_Port
     $s = "Проброс порта localost :",$i,"->",$ServerFqdn,":",$i
-    Write-Host
     Write-Host $s
-    Write-Host
-    Start-Process -FilePath "C:\WINDOWS\System32\OpenSSH\ssh.exe" -ArgumentList "-L $s_Port -v -i $SecretKey -N -f -l $UbuntuUserName  $ServerFqdn"
+    Start-Process -FilePath "C:\WINDOWS\System32\OpenSSH\ssh.exe" `
+                  -ArgumentList "-L $s_Port -v -i $SecretKey -fN -l $UbuntuUserName  $ServerFqdn" `
+                  -NoNewWindow
     # TODO: анализ кода возврата ssh.exe
-
 }
 
 # Загружаем секретный ключ с passphrase в Pageant

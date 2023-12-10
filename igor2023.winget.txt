@@ -1,0 +1,153 @@
+PS C:\Users\igorl\IdeaProjects\MyPowershell> winget  list
+Имя                                                   ИД                                                                  Версия                      Доступно Источник
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Neo4j Desktop 1.5.9                                   14c7e06f-6a3b-5e4e-9e0c-ebe055b1b752                                1.5.9
+RedisInsight-v2 2.36.0                                35443657-9fe0-5c86-a3fe-135cfbd99cbb                                2.36.0
+Tinkoff                                               36d945c9bebadd20b195d228f9433ddf                                    1.0
+WhatsApp                                              5319275A.WhatsAppDesktop_cv1g1gvanyjgm                              2.2348.4.0
+Visual Studio Build Tools 2022                        Microsoft.VisualStudio.2022.BuildTools                              17.7.5                      17.8.3   winget
+DbVisualizer                                          8973-4025-0853-7287                                                 23.2.5
+Яндекс.Музыка                                         A025C540.Yandex.Music_vfvw9svesycw6                                 4.54.8517.0
+Adobe Acrobat Reader                                  AdobeAcrobatReaderCoreApp_pc75e8sa7ep4e                             23.0.0.0
+Центр управления графикой Intel®                      AppUp.IntelGraphicsExperience_8j3eq9eme6ctt                         1.100.5237.0
+ThunderboltTM Control Center                          AppUp.ThunderboltControlCenter_8j3eq9eme6ctt                        1.0.37.0
+iCloud                                                AppleInc.iCloud_nzyj5cx40ttqa                                       14.2.122.0
+Bitrix24 for Windows                                  Bitrix24                                                            14.3.10.74
+CPUID CPU-Z 2.08                                      CPUID.CPU-Z                                                         2.08                                 winget
+Microsoft Clipchamp                                   Clipchamp.Clipchamp_yxz26nhyzhsrt                                   2.8.3.0
+Диаг.Плагин 3.0.27.691                                DiagPlugin                                                          3.0.27.691
+Docker Desktop                                        Docker.DockerDesktop                                                4.24.2                      4.26.0   winget
+Git                                                   Git.Git                                                             2.42.0.2                    2.43.0   winget
+Google Chrome                                         Google.Chrome                                                       120.0.6099.71                        winget
+Kaspersky Password Manager                            InstallWIX_{8EB91B7C-28B6-453E-8EA8-F1D8BEE3716E}                   23.2.0.242
+Aqua                                                  JetBrains.Aqua.EAP                                                  2023.3 Public Preview                winget
+CLion Nova                                            JetBrains Toolbox (CLion-Nova) 8f8651fd-54a1-4613-9cad-ac4e7a602018 2023.3 Early Access Program
+DataSpell                                             JetBrains Toolbox (DataSpell) d560374d-b272-4b98-82d3-e7a553b89856  2023.3
+GoLand                                                JetBrains Toolbox (Goland) d554cf1b-d38a-4d0a-99ef-d77c6ee69edb     2023.3
+IntelliJ IDEA Ultimate                                JetBrains Toolbox (IDEA-U) 1f3ba9e1-07a9-4ec9-a3da-fdc49f076a90     2023.3
+PhpStorm                                              JetBrains Toolbox (PhpStorm) 414af465-a92a-4ef6-9d7c-a2b4d6fccf45   2023.3
+PyCharm Professional                                  JetBrains Toolbox (PyCharm-P) 0a3f3d52-e28f-4dd0-8d48-eca8bffc886a  2023.3
+RustRover                                             JetBrains.RustRover                                                 2023.3 EAP                           winget
+Space Desktop                                         JetBrains Toolbox (Space) 44efbc89-c381-4378-a403-3000fb753afd      2023.1.7
+WebStorm                                              JetBrains Toolbox (WebStorm) 018deae5-7541-4e06-acd2-f13c8ab31499   2023.3
+Writerside                                            JetBrains.Writerside                                                2023.2 EAP                  2023.2   winget
+DataGrip                                              JetBrains Toolbox (datagrip) d7ac4f7a-6ce1-4435-90bf-0b5ce122350d   2023.3
+KC Softwares DUMo                                     KC Softwares DUMo_is1                                               2.25.4.125
+KC Softwares HDDExpert                                KC Softwares HDDExpert_is1                                          1.20.1.55
+KC Softwares SUMo                                     KC Softwares SUMo_is1                                               5.17.10.542
+Microsoft Edge                                        Microsoft Edge                                                      120.0.2210.61
+Microsoft Edge Update                                 Microsoft Edge Update                                               1.3.181.5
+Среда выполнения Microsoft Edge WebView2 Runtime      Microsoft EdgeWebView                                               120.0.2210.61
+Cortana                                               Microsoft.549981C3F5F10_8wekyb3d8bbwe                               4.2308.1005.0
+AV1 Video Extension                                   Microsoft.AV1VideoExtension_8wekyb3d8bbwe                           1.1.61781.0
+Новости                                               Microsoft.BingNews_8wekyb3d8bbwe                                    4.55.62231.0
+MSN Погода                                            Microsoft.BingWeather_8wekyb3d8bbwe                                 4.53.52331.0
+Bluetooth® Profile Pack                               Microsoft.BluetoothProfilePack_8wekyb3d8bbwe                        0.23082.3.0
+Пакет обеспечения совместимости с OpenCLTM и OpenGL®  Microsoft.D3DMappingLayers_8wekyb3d8bbwe                            1.2312.4.0
+Установщик приложения                                 Microsoft.AppInstaller                                              1.21.3133.0                          winget
+Xbox                                                  Microsoft.GamingApp_8wekyb3d8bbwe                                   2311.1001.7.0
+Техническая поддержка                                 Microsoft.GetHelp_8wekyb3d8bbwe                                     10.2308.12552.0
+Советы Майкрософт                                     Microsoft.Getstarted_8wekyb3d8bbwe                                  10.2309.0.0
+HEIF Image Extensions                                 Microsoft.HEIFImageExtension_8wekyb3d8bbwe                          1.0.63001.0
+Расширения для видео HEVC от производителя устройства Microsoft.HEVCVideoExtension_8wekyb3d8bbwe                          2.0.61931.0
+Пакет локализованного интерфейса на русском           Microsoft.LanguageExperiencePackru-RU_8wekyb3d8bbwe                 22621.47.187.0
+Расширение для видео MPEG-2                           Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe                         1.0.61931.0
+Microsoft Edge                                        Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe                        120.0.2210.61
+Power BI                                              Microsoft.MicrosoftPowerBIForWindows_8wekyb3d8bbwe                  3223.30905.55001.0
+Solitaire & Casual Games                              Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe                4.18.11020.0
+Записки (Майкрософт)                                  Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe                        4.0.6001.0
+Minecraft Education                                   Microsoft.MinecraftEducationEdition_8wekyb3d8bbwe                   1.20.1305.0
+Портал смешанной реальности                           Microsoft.MixedReality.Portal_8wekyb3d8bbwe                         2000.21051.1282.0
+Тарифные планы                                        Microsoft.OneConnect_8wekyb3d8bbwe                                  5.2308.2294.0
+OneDrive                                              Microsoft.OneDriveSync_8wekyb3d8bbwe                                21220.1024.5.0
+Outlook for Windows                                   Microsoft.OutlookForWindows_8wekyb3d8bbwe                           1.2023.1101.300
+Paint                                                 Microsoft.Paint_8wekyb3d8bbwe                                       11.2309.30.0
+Люди (Майкрософт)                                     Microsoft.People_8wekyb3d8bbwe                                      10.2202.33.0
+Power Automate                                        Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe                        1.0.885.0
+Raw Image Extension                                   Microsoft.RawImageExtension_8wekyb3d8bbwe                           2.1.63181.0
+Ножницы                                               Microsoft.ScreenSketch_8wekyb3d8bbwe                                11.2310.54.0
+Безопасность Windows                                  Microsoft.SecHealthUI_8wekyb3d8bbwe                                 1000.25873.9001.0
+Узел для покупок в Store                              Microsoft.StorePurchaseApp_8wekyb3d8bbwe                            22310.1401.1.0
+Microsoft To Do                                       Microsoft.Todos_8wekyb3d8bbwe                                       2.110.63211.0
+VP9 Video Extensions                                  Microsoft.VP9VideoExtensions_8wekyb3d8bbwe                          1.0.62911.0
+Расширения для интернет-мультимедиа                   Microsoft.WebMediaExtensions_8wekyb3d8bbwe                          1.0.61591.0
+Webp Image Extensions                                 Microsoft.WebpImageExtension_8wekyb3d8bbwe                          1.0.62681.0
+Microsoft Whiteboard                                  Microsoft.Whiteboard_8wekyb3d8bbwe                                  53.21027.539.0
+Dev Home                                              Microsoft.DevHome                                                   0.700.323.0                 0.701.3… winget
+Фотографии (Майкрософт)                               Microsoft.Windows.Photos_8wekyb3d8bbwe                              2023.11110.6001.0
+Часы Windows                                          Microsoft.WindowsAlarms_8wekyb3d8bbwe                               11.2306.23.0
+Калькулятор Windows                                   Microsoft.WindowsCalculator_8wekyb3d8bbwe                           11.2307.4.0
+Камера Windows                                        Microsoft.WindowsCamera_8wekyb3d8bbwe                               2023.2311.5.0
+Центр отзывов                                         Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe                          1.2309.12711.0
+Карты Windows                                         Microsoft.WindowsMaps_8wekyb3d8bbwe                                 1.0.57.0
+Блокнот Windows                                       Microsoft.WindowsNotepad_8wekyb3d8bbwe                              11.2310.13.0
+Звукозапись Windows                                   Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe                        1.0.67.0
+Microsoft Store                                       Microsoft.WindowsStore_8wekyb3d8bbwe                                22310.1401.8.0
+Терминал Windows                                      Microsoft.WindowsTerminal                                           1.18.3181.0                          winget
+Windows Package Manager Source (winget)               Microsoft.Winget.Source_8wekyb3d8bbwe                               2023.1209.2119.134
+Xbox TCUI                                             Microsoft.Xbox.TCUI_8wekyb3d8bbwe                                   1.24.10001.0
+Xbox Game Bar Plugin                                  Microsoft.XboxGameOverlay_8wekyb3d8bbwe                             1.54.4001.0
+Game Bar                                              Microsoft.XboxGamingOverlay_8wekyb3d8bbwe                           6.123.11012.0
+Xbox Identity Provider                                Microsoft.XboxIdentityProvider_8wekyb3d8bbwe                        12.95.3001.0
+Xbox Game Speech Window                               Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe                     1.21.13002.0
+Связь с телефоном                                     Microsoft.YourPhone_8wekyb3d8bbwe                                   1.23092.158.0
+Медиаплеер Windows                                    Microsoft.ZuneMusic_8wekyb3d8bbwe                                   11.2310.8.0
+Кино и ТВ                                             Microsoft.ZuneVideo_8wekyb3d8bbwe                                   10.22091.10051.0
+Быстрая поддержка                                     MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe                    2.0.22.0
+Подсистема Windows для Linux                          MicrosoftCorporationII.WindowsSubsystemForLinux_8wekyb3d8bbwe       2.0.9.0
+Windows Web Experience Pack                           MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy                 423.29700.0.0
+Nmap 7.94                                             Insecure.Nmap                                                       7.94                                 winget
+Npcap                                                 NpcapInst                                                           1.78
+Speedtest by Ookla                                    Ookla.SpeedtestbyOokla_43tkc6nmykmb6                                1.16.165.0
+Intel(R) Network Connections Drivers                  PROSet                                                              28.2
+Proton Drive                                          Proton.ProtonDrive                                                  1.4.4                                winget
+Proton VPN                                            Proton VPN_is1                                                      3.2.7
+Контур.Плагин 4.1.1.430                               SkbKontur Plugin                                                    4.1.1.430
+Counter-Strike: Global Offensive                      Steam App 730                                                       Unknown
+JetBrains Toolbox                                     JetBrains.Toolbox                                                   2.1.1.18388                          winget
+USBPcap 1.5.4.0                                       USBPcap                                                             1.5.4.0
+WinRAR 6.24 бета 1 (64-разрядная)                     WinRAR archiver                                                     6.24.1
+WinRAR                                                WinRAR.ShellExtension_s4jet1zx4n14a                                 1.0.0.2
+Wireshark 4.2.0 x64                                   WiresharkFoundation.Wireshark                                       4.2.0                                winget
+Кнопки сервисов Яндекса на панели задач               YaPinLancher                                                        3.7.9.0
+Yandex                                                Yandex.Browser                                                      23.11.2.752                          winget
+Яндекс.Диск                                           YandexDisk2                                                         3.2.34.4962
+Proton                                                account.protonmail.com.ru-2B8FDB20_a3m4dmwd2620j                    1.0.0.0
+Proton Mail                                           mail.proton.me-A095E971_t5g3qc2xefh5c                               1.0.0.0
+Почта и Календарь                                     microsoft.windowscommunicationsapps_8wekyb3d8bbwe                   16005.14326.21752.0
+pgAdmin 4 version 7.8                                 PostgreSQL.pgAdmin                                                  7.8                         8.0      winget
+μTorrent                                              uTorrent                                                            3.6.0.46900
+Instagram                                             www.instagram.com-E4B7766F_ysfa6mcnwr1rw                            1.0.0.0
+Intel(R) Wireless Bluetooth(R)                        {00000250-0220-1049-84C8-B8D95FA3C8C3}                              22.250.0.2
+Intel(R) Computing Improvement Program                {0D8810A6-1D38-4885-9690-948CD0B7CA6F}                              2.4.10577
+vs_CoreEditorFonts                                    {1851460E-0E63-4117-B5BA-25A2F045801B}                              17.7.40001
+Python 3.10.4 (64-bit)                                Python.Python.3.10                                                  3.10.4                      3.10.11  winget
+Microsoft Windows Desktop Runtime - 6.0.25 (x86)      Microsoft.DotNet.DesktopRuntime.6                                   6.0.25                               winget
+Python Launcher                                       Python.Launcher                                                     3.12.0                               winget
+Windows SDK AddOn                                     {342873C0-1C08-4A99-82B6-50D1D2043E5A}                              10.1.0.0
+Windows Subsystem for Linux                           {408A5C50-34F2-4025-968E-A21D6A515D48}                              2.0.9.0
+Microsoft Visual C++ 2015-2022 Redistributable (x86)… Microsoft.VCRedist.2015+.x86                                        14.36.32532.0               14.38.3… winget
+PuTTY release 0.78 (64-bit)                           PuTTY.PuTTY                                                         0.78.0.0                    0.79.0.0 winget
+Telegram Desktop                                      Telegram.TelegramDesktop                                            4.12.2                               winget
+Zabbix Agent 2 (64-bit)                               {61F7524E-A376-428D-90E5-87B4C4AAAA90}                              6.4.3.2400
+Microsoft Visual Studio Installer                     {6F320B93-EE3C-4826-85E0-ADF79F8D4C61}                              3.7.2181.36443
+LibreOffice 7.6.4.1                                   TheDocumentFoundation.LibreOffice                                   7.6.4.1                              winget
+Microsoft Windows Desktop Runtime - 7.0.14 (x64)      Microsoft.DotNet.DesktopRuntime.7                                   7.0.14                               winget
+Microsoft Visual C++ 2015-2022 Redistributable (x64)… Microsoft.VCRedist.2015+.x64                                        14.36.32532.0               14.38.3… winget
+Adobe Acrobat (64-bit)                                {AC76BA86-1049-1033-7760-BC15014EA700}                              23.006.20380
+PowerShell 7-x64                                      Microsoft.PowerShell                                                7.4.0.0                              winget
+IVA Connect 15.1.2888.0                               {B6A87EE1-7037-4143-B38F-647E3004A364}}_is1                         15.1.2888.0
+Far Manager 3 (x64)                                   FarManager.FarManager                                               3.0.6204                             winget
+Microsoft Update Health Tools                         {C6FD611E-7EFE-488C-A0E0-974C09EF6473}                              5.72.0.0
+iCloud Outlook                                        {DA9B921B-471D-4B61-AC5A-ACCAFB9260D3}                              14.2.0.96
+PuTTY release 0.79 (64-bit)                           PuTTY.PuTTY                                                         0.79.0.0                             winget
+Microsoft Visual Studio Code                          Microsoft.VisualStudioCode                                          1.83.1                      1.85.0   winget
+Realtek High Definition Audio Driver                  {F132AF7F-7BCA-4EDE-8A7C-958108FE7DBC}                              6.0.8988.1
+Плагин пользователя систем электронного правительств… {F1362586-9241-4AEA-AF0A-2BC25AAB39E9}                              3.1.1.0
+Windows Subsystem for Linux Update                    {F8474A47-8B5D-4466-ACE3-78EAB3BF21A8}                              5.10.102.1
+Python 3.12.0 (64-bit)                                Python.Python.3.12                                                  3.12.0                               winget
+Windows Software Development Kit - Windows 10.0.2262… {d7f51c79-38df-4c6f-be17-0fcce28bc257}                              10.1.22621.1778
+Intel® Driver & Support Assistant                     Intel.IntelDriverAndSupportAssistant                                23.4.39.9                            winget
+Python 3.11.6 (64-bit)                                Python.Python.3.11                                                  3.11.6                               winget
+Microsoft ASP.NET Core 7.0.14 - Shared Framework (x6… Microsoft.DotNet.AspNetCore.7                                       7.0.14                               winget
+PS C:\Users\igorl\IdeaProjects\MyPowershell>
