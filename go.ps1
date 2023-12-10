@@ -31,6 +31,7 @@ Write-Host 'Секретный ssh-ключ (для pagent):', $SecretKeyPpk
 
 # Добавляем секретный ключ в ssh-agent
 ssh-add -v $SecretKey
+# TODO Анализ кода возврата
 
 # Цикл по номерам портов, создаем ssh-туннель на порт
 Write-Host 'Создаём ssh-туннели для портов ',$Ports
@@ -43,7 +44,6 @@ foreach ($i in $Ports) {
     Write-Host $s
     Write-Host
     ssh -L $s_Port -v -i $SecretKey -N -f -l $UbuntuUserName  $ServerFqdn
-
     # TODO: анализ кода возврата ssh.exe
 
 }
