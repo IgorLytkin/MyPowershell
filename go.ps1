@@ -43,7 +43,7 @@ foreach ($i in $Ports) {
     Write-Host
     Write-Host $s
     Write-Host
-    ssh -L $s_Port -v -i $SecretKey -N -f -l $UbuntuUserName  $ServerFqdn
+    Start-Process -FilePath "C:\WINDOWS\System32\OpenSSH\ssh.exe" -ArgumentList "-L $s_Port -v -i $SecretKey -N -f -l $UbuntuUserName  $ServerFqdn"
     # TODO: анализ кода возврата ssh.exe
 
 }
