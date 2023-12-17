@@ -20,8 +20,9 @@ Stop-Process -Name ssh -Force -ErrorAction SilentlyContinue
 Stop-Process -Name pagent -Force -ErrorAction SilentlyContinue
 Stop-Process -Name putty -Force -ErrorAction SilentlyContinue
 
-# Запускаем tcpview64
-Start-Process "pageant.exe" -ArgumentList $SecretKeyPpk -PassThru
+# Запускаем PAgent.exe, загружаем секретный ключ в формате .ppk
+# https://putty.org.ru/manual/chapter9
+Start-Process "pageant.exe" -ArgumentList "$SecretKeyPpk -restrict-acl" -PassThru
 
 # Устанавливаем ssh-туннели
 if ($LocalComputerName -eq "IGOR2022") { # Ноутбук HP
@@ -44,6 +45,7 @@ Start-Process -FilePath "C:\WINDOWS\System32\OpenSSH\ssh-add.exe" -ArgumentList 
 # Запуск TcpView64
 # -e - RunAs Administrator
 Write-Host 'Запуск TcpView64'
+Write-Host $TcpView
 Start-Process -FilePath $TcpView -ArgumentList "-e"
 
 # Цикл по номерам портов, создаем ssh-туннель на порт
@@ -65,10 +67,10 @@ Start-Process "pageant.exe" -ArgumentList $SecretKeyPpk -PassThru
 # TODO: анализ кода возврата pagent.exe
 
 # Ожидаем некоторое время перед запуском туннелей и putty
-Start-Sleep -Seconds 5
+# Start-Sleep -Seconds 30
 
 # Запускаем процессы putty.exe
-for ($j = 1;$j -le 2;$j++) {
+for ($j = 1;$j -le 3;$j++) {
     Write-Host  'Запуск Putty #',$j
     Start-Process "putty.exe" -ArgumentList "-ssh -i $SecretKeyPpk -l liv -L 22:localhost:22" -NoNewWindow
     # TODO: анализ кода возврата putty.exe
