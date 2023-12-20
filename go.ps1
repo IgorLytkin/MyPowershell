@@ -60,7 +60,7 @@ foreach ($i in $Ports) {
                   -ArgumentList "-L $s_Port -v -i $SecretKey -fN -l $UbuntuUserName  $ServerFqdn" `
                   -NoNewWindow
     # TODO: анализ кода возврата ssh.exe
-    Start-Sleep -Seconds 10
+    Start-Sleep -Seconds 15
 }
 
 # Ожидаем некоторое время перед запуском туннелей и putty
