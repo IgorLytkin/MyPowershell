@@ -17,7 +17,7 @@ Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH.Client*'
 
 # Убиваем все процессы ssh.exe, pagent.exe, putty.exe
 Stop-Process -Name ssh -Force -ErrorAction SilentlyContinue
-Stop-Process -Name pagent -Force -ErrorAction SilentlyContinue
+Stop-Process -Name pageant -Force -ErrorAction SilentlyContinue
 Stop-Process -Name putty -Force -ErrorAction SilentlyContinue
 
 # Запускаем PAgent.exe, загружаем секретный ключ в формате .ppk
@@ -60,18 +60,17 @@ foreach ($i in $Ports) {
                   -ArgumentList "-L $s_Port -v -i $SecretKey -fN -l $UbuntuUserName  $ServerFqdn" `
                   -NoNewWindow
     # TODO: анализ кода возврата ssh.exe
+    Start-Sleep -Seconds 10
 }
-
-# Загружаем секретный ключ с passphrase в Pageant
-Start-Process "pageant.exe" -ArgumentList $SecretKeyPpk -PassThru
-# TODO: анализ кода возврата pagent.exe
 
 # Ожидаем некоторое время перед запуском туннелей и putty
 # Start-Sleep -Seconds 30
 
 # Запускаем процессы putty.exe
 for ($j = 1;$j -le 3;$j++) {
-    Write-Host  'Запуск Putty #',$j
-    Start-Process "putty.exe" -ArgumentList "-ssh -i $SecretKeyPpk -l liv -L 22:localhost:22" -NoNewWindow
+    Write-Host  'Запуск Putty #', $j
+    Start-Process "putty.exe" -ArgumentList "-ssh -i $SecretKeyPpk " # -l liv -L 22:localhost:22" -NoNewWindow
     # TODO: анализ кода возврата putty.exe
 }
+
+
