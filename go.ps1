@@ -26,7 +26,7 @@ Start-Process "pageant.exe" -ArgumentList "$SecretKeyPpk -restrict-acl" -PassThr
 
 # Устанавливаем ssh-туннели
 if ($LocalComputerName -eq "IGOR2022") { # Ноутбук HP
-    $KeysFolder = "D:\Yandex\igor.lytkin.2020\YandexDisk\Singularity\2023\rsa\"
+    $KeysFolder = "D:\Yandex\igor.lytkin.2020\YandexDisk\Singularity\Keys\2023\rsa\"
     $TcpView = 'd:\Dist\SysinternalsSuite\tcpview64.exe'
 } elseif ($LocalComputerName -eq "IGOR2023") { # Beelink EQ12
     $KeysFolder = 'C:\Users\igorl\YandexDisk\Singularity\Keys\2023\rsa\'
