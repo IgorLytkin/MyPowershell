@@ -57,10 +57,10 @@ foreach ($i in $Ports) {
     $s = "ѕроброс порта localost :",$i,"->",$ServerFqdn,":",$i
     Write-Host $s
     Start-Process -FilePath "C:\WINDOWS\System32\OpenSSH\ssh.exe" `
-                  -ArgumentList "-L $s_Port -v -i $SecretKey -fN -l $UbuntuUserName  $ServerFqdn" `
+                  -ArgumentList "-L $s_Port -i $SecretKey -fN -l $UbuntuUserName  $ServerFqdn" `
                   -NoNewWindow
     # TODO: анализ кода возврата ssh.exe
-   Start-Sleep -Seconds 15
+   Start-Sleep -Seconds 10
 }
 
 # ќжидаем некоторое врем€ перед запуском туннелей и putty
