@@ -39,7 +39,7 @@ Write-Host 'Секретный ssh-ключ:', $SecretKey
 Write-Host 'Секретный ssh-ключ (для pagent):', $SecretKeyPpk
 
 # Добавляем секретный ключ в ssh-agent
-Start-Process -FilePath "C:\WINDOWS\System32\OpenSSH\ssh-add.exe" -ArgumentList "-v $SecretKey"
+# Start-Process -FilePath "C:\WINDOWS\System32\OpenSSH\ssh-add.exe" -ArgumentList "-v $SecretKey"
 # TODO Анализ кода возврата
 
 # Запуск TcpView64
@@ -60,7 +60,7 @@ foreach ($i in $Ports) {
                   -ArgumentList "-L $s_Port -v -i $SecretKey -fN -l $UbuntuUserName  $ServerFqdn" `
                   -NoNewWindow
     # TODO: анализ кода возврата ssh.exe
-    Start-Sleep -Seconds 15
+   Start-Sleep -Seconds 15
 }
 
 # Ожидаем некоторое время перед запуском туннелей и putty
