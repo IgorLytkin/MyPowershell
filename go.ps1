@@ -50,8 +50,7 @@ Start-Process -FilePath $TcpView -ArgumentList "-e"
 
 # Цикл по номерам портов, создаем ssh-туннель на порт
 Write-Host 'Создаём ssh-туннели для портов ',$Ports
-foreach ($i in $Ports) {
-    Write-Host $i
+foreach ($i in $Ports) {    Write-Host $i
     $s_Port = $i+":localhost:"+$i
     Write-Host $s_Port
     $s = "Проброс порта localost :",$i,"->",$ServerFqdn,":",$i
